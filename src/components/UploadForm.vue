@@ -52,12 +52,10 @@ export default ({
                 else{
                     self.champs = data.errors;
                     self.a = false;
-                    console.log(self.a);
                 }
             })
             .catch(function(error){
                 console.log(error);
-                self.champs = error;
             });
         },
          getCsrfToken() {
